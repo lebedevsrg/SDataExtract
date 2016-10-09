@@ -65,7 +65,7 @@ namespace SDataExt
             str = new StorageRegistry();
             lmd = new LocalMarketDataDrive();
             lmd.Path = Path;
-            str.DefaultDrive = lmd;
+            str.DefaultDrive = lmd; //
         }
 
         public double GetList()
