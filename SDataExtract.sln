@@ -5,7 +5,9 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDataExtract", "SDataExtract.csproj", "{A9746912-7027-43BD-BF44-ACDA775A30F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMtest1", "Tests\MHTest1\WpfApplication1\SMtest1.csproj", "{804C6798-5936-4D53-968E-48F4368C0604}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTBtest", "Tests\MTBtest\MTBtest.csproj", "{FB5F9E43-2F38-4BDF-AA18-65283C4C453D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFtest1", "Tests\WPFtest\WpfApplication1\WPFtest1.csproj", "{804C6798-5936-4D53-968E-48F4368C0604}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,14 @@ Global
 		{A9746912-7027-43BD-BF44-ACDA775A30F2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A9746912-7027-43BD-BF44-ACDA775A30F2}.Release|x64.ActiveCfg = Release|x64
 		{A9746912-7027-43BD-BF44-ACDA775A30F2}.Release|x64.Build.0 = Release|x64
+		{FB5F9E43-2F38-4BDF-AA18-65283C4C453D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB5F9E43-2F38-4BDF-AA18-65283C4C453D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB5F9E43-2F38-4BDF-AA18-65283C4C453D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{FB5F9E43-2F38-4BDF-AA18-65283C4C453D}.Debug|x64.Build.0 = Debug|Any CPU
+		{FB5F9E43-2F38-4BDF-AA18-65283C4C453D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB5F9E43-2F38-4BDF-AA18-65283C4C453D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB5F9E43-2F38-4BDF-AA18-65283C4C453D}.Release|x64.ActiveCfg = Release|Any CPU
+		{FB5F9E43-2F38-4BDF-AA18-65283C4C453D}.Release|x64.Build.0 = Release|Any CPU
 		{804C6798-5936-4D53-968E-48F4368C0604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{804C6798-5936-4D53-968E-48F4368C0604}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{804C6798-5936-4D53-968E-48F4368C0604}.Debug|x64.ActiveCfg = Debug|Any CPU

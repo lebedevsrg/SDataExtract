@@ -6,10 +6,11 @@ using System.Windows;
 using StockSharp.Algo.Candles;
 using StockSharp.Algo.Storages;
 using System.Collections.ObjectModel;
+using StockSharp.Localization;
 using StockSharp.BusinessEntities;
 using StockSharp.Messages;
 
-namespace MHelper
+namespace SDataExt
 {
     public class DataLoader
     {
@@ -64,7 +65,6 @@ namespace MHelper
             str = new StorageRegistry();
             lmd = new LocalMarketDataDrive();
             lmd.Path = Path;
-            lmd.UseAlphabeticPath = true;
             str.DefaultDrive = lmd;
         }
 
@@ -112,8 +112,8 @@ namespace MHelper
 
                 switch (DType)
                 {
+                    case "A":
                     case "ALL":
-                    case "All":
                         dlClose = candles.Select(c => (double)c.ClosePrice).ToArray();
                         dlOpen = candles.Select(c => (double)c.OpenPrice).ToArray();
                         dlLow = candles.Select(c => (double)c.LowPrice).ToArray();
@@ -121,18 +121,18 @@ namespace MHelper
                         dlVol = candles.Select(c => (double)c.TotalVolume).ToArray();
                         dlInfo = ConcatCW(dlOpen,dlHigh,dlLow,dlClose,dlVol);
                         break;
-                    case "Close":
+                    case "C":
                     case "CLOSE":
                         dlClose = candles.Select(c => (double)c.ClosePrice).ToArray();
                         dlInfo = ConcatCW(dlClose);
                         break;
-                    case "Open":
+                    case "O":
                     case "OPEN":
                         dlOpen = candles.Select(c => (double)c.OpenPrice).ToArray();
                         dlInfo = ConcatCW(dlOpen);
                         break;
+                    case "V":
                     case "VOL":
-                    case "Vol":
                         dlVol = candles.Select(c => (double)c.TotalVolume).ToArray();
                         dlInfo = ConcatCW(dlVol);
                         break;
